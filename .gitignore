@@ -1,0 +1,24 @@
+# ---- 凭证与密钥（绝不提交）----
+.env
+.env.*
+*.token
+*token*.txt
+mcp.json
+!mcp-config.example.json
+secrets/
+
+# ---- 运行产物 ----
+meal_input.json
+meal_result.json
+meal_result.md
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

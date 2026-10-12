@@ -1,0 +1,53 @@
+{
+  "_comment": "示例输入：数据形态对齐麦当劳 MCP 的 query-meals / list-nutrition-foods / query-store-coupons 返回结构（已做扁平化与脱敏）。真实使用时由 WorkBuddy 调 MCP 拉取后生成同结构文件。",
+  "constraints": {
+    "max_payable": 45,
+    "max_calories": 1100,
+    "min_protein": 35,
+    "target_calories": 800,
+    "target_protein": 45,
+    "must_include": [],
+    "exclude": []
+  },
+  "menu": [
+    { "code": "B001", "name": "巨无霸", "category": "汉堡", "price": 25.5, "calories": 550, "protein": 25, "fat": 28, "carbs": 45, "sodium": 950 },
+    { "code": "B002", "name": "麦辣鸡腿汉堡", "category": "汉堡", "price": 23.0, "calories": 570, "protein": 24, "fat": 30, "carbs": 48, "sodium": 1050 },
+    { "code": "B003", "name": "板烧鸡腿堡", "category": "汉堡", "price": 23.5, "calories": 460, "protein": 26, "fat": 20, "carbs": 42, "sodium": 880 },
+    { "code": "B004", "name": "双层吉士汉堡", "category": "汉堡", "price": 20.5, "calories": 450, "protein": 25, "fat": 22, "carbs": 33, "sodium": 900 },
+    { "code": "B005", "name": "麦香鸡", "category": "汉堡", "price": 17.0, "calories": 420, "protein": 20, "fat": 20, "carbs": 40, "sodium": 800 },
+    { "code": "B006", "name": "吉士汉堡", "category": "汉堡", "price": 13.0, "calories": 300, "protein": 15, "fat": 13, "carbs": 30, "sodium": 620 },
+    { "code": "B007", "name": "麦香鱼", "category": "汉堡", "price": 16.5, "calories": 340, "protein": 15, "fat": 14, "carbs": 38, "sodium": 580 },
+    { "code": "B008", "name": "原味鸡腿堡", "category": "汉堡", "price": 22.0, "calories": 500, "protein": 24, "fat": 24, "carbs": 44, "sodium": 920 },
+    { "code": "B009", "name": "那么大鸡排", "category": "汉堡", "price": 18.0, "calories": 380, "protein": 22, "fat": 18, "carbs": 28, "sodium": 760 },
+    { "code": "B010", "name": "麦辣鸡腿卷", "category": "卷", "price": 15.0, "calories": 380, "protein": 15, "fat": 16, "carbs": 42, "sodium": 700 },
+
+    { "code": "S001", "name": "小薯条", "category": "配餐", "price": 9.0, "calories": 230, "protein": 3, "fat": 11, "carbs": 30, "sodium": 190 },
+    { "code": "S002", "name": "中薯条", "category": "配餐", "price": 12.0, "calories": 340, "protein": 4, "fat": 16, "carbs": 44, "sodium": 280 },
+    { "code": "S003", "name": "大薯条", "category": "配餐", "price": 15.0, "calories": 460, "protein": 6, "fat": 22, "carbs": 60, "sodium": 380 },
+    { "code": "S004", "name": "麦乐鸡 5 块", "category": "配餐", "price": 13.5, "calories": 250, "protein": 14, "fat": 15, "carbs": 14, "sodium": 480 },
+    { "code": "S005", "name": "麦乐鸡 10 块", "category": "配餐", "price": 24.0, "calories": 500, "protein": 28, "fat": 30, "carbs": 28, "sodium": 960 },
+    { "code": "S006", "name": "鸡翅 2 块", "category": "配餐", "price": 12.0, "calories": 200, "protein": 12, "fat": 12, "carbs": 10, "sodium": 420 },
+    { "code": "S007", "name": "玉米杯", "category": "配餐", "price": 8.0, "calories": 90, "protein": 3, "fat": 2, "carbs": 18, "sodium": 5 },
+    { "code": "S008", "name": "蔬菜沙拉", "category": "配餐", "price": 11.0, "calories": 60, "protein": 2, "fat": 1, "carbs": 11, "sodium": 120 },
+
+    { "code": "D001", "name": "中杯可乐", "category": "饮品", "price": 9.5, "calories": 150, "protein": 0, "fat": 0, "carbs": 39, "sodium": 15 },
+    { "code": "D002", "name": "大杯可乐", "category": "饮品", "price": 11.0, "calories": 210, "protein": 0, "fat": 0, "carbs": 55, "sodium": 20 },
+    { "code": "D003", "name": "零度可乐", "category": "饮品", "price": 9.5, "calories": 1, "protein": 0, "fat": 0, "carbs": 0, "sodium": 15 },
+    { "code": "D004", "name": "美式咖啡", "category": "饮品", "price": 12.0, "calories": 5, "protein": 0, "fat": 0, "carbs": 1, "sodium": 10 },
+    { "code": "D005", "name": "拿铁", "category": "饮品", "price": 16.0, "calories": 130, "protein": 8, "fat": 6, "carbs": 10, "sodium": 90 },
+    { "code": "D006", "name": "橙汁", "category": "饮品", "price": 12.0, "calories": 120, "protein": 1, "fat": 0, "carbs": 28, "sodium": 5 },
+    { "code": "D007", "name": "豆浆", "category": "饮品", "price": 8.0, "calories": 100, "protein": 5, "fat": 3, "carbs": 14, "sodium": 60 },
+
+    { "code": "T001", "name": "原味甜筒", "category": "甜品", "price": 6.0, "calories": 200, "protein": 4, "fat": 6, "carbs": 33, "sodium": 70 },
+    { "code": "T002", "name": "新地巧克力", "category": "甜品", "price": 9.0, "calories": 280, "protein": 5, "fat": 8, "carbs": 48, "sodium": 110 },
+    { "code": "T003", "name": "麦旋风奥利奥", "category": "甜品", "price": 13.5, "calories": 380, "protein": 6, "fat": 13, "carbs": 60, "sodium": 180 },
+    { "code": "T004", "name": "香芋派", "category": "甜品", "price": 7.0, "calories": 230, "protein": 3, "fat": 10, "carbs": 33, "sodium": 150 }
+  ],
+  "coupons": [
+    { "couponId": "C-FULL40-10", "name": "满 40 减 10", "type": "full_reduction", "threshold": 40, "discount": 10, "applicable_categories": [] },
+    { "couponId": "C-FULL30-6", "name": "满 30 减 6", "type": "full_reduction", "threshold": 30, "discount": 6, "applicable_categories": [] },
+    { "couponId": "C-FULL25-5", "name": "满 25 减 5", "type": "full_reduction", "threshold": 25, "discount": 5, "applicable_categories": [] },
+    { "couponId": "C-BURGER-88", "name": "汉堡 8.8 折", "type": "discount", "rate": 0.88, "applicable_categories": ["主食"] },
+    { "couponId": "C-SIDE-6", "name": "配餐直减 6 元", "type": "fixed", "discount": 6, "applicable_categories": ["配餐"] }
+  ]
+}
